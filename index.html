@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact and Registration</title>
+    <style>
+        /* Basic styling for the table and form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Title for the page -->
+    <h1>Contact and Registration Form</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Roman Numerals List</h2>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/1536721/pexels-photo-1536721.jpeg" alt="Nature Image" width="500" />
+
+    <!-- Table of Contacts -->
+    <h2>Contacts</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St, Springfield</td>
+                <td>123-456-7890</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak St, Rivertown</td>
+                <td>234-567-8901</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Sam Brown</td>
+                <td>789 Pine St, Laketown</td>
+                <td>345-678-9012</td>
+                <td>sambrown@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>101 Maple St, Hilltop</td>
+                <td>456-789-0123</td>
+                <td>emilyjohnson@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Lee</td>
+                <td>202 Birch St, Seaside</td>
+                <td>567-890-1234</td>
+                <td>michaellee@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <!-- Dropdown for Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+
+        <!-- Radio Buttons for Newsletter Subscription -->
+        <label>Subscribe to Newsletter:</label>
+        <input type="radio" id="yes" name="newsletter" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="newsletter" value="no">
+        <label for="no">No</label>
+        <br>
+
+        <!-- Checkboxes for Interests -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+
+</html>
